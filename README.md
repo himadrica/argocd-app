@@ -17,4 +17,8 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 
 kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 ```
+## deploy argo cd app
 
+```
+kubectl apply -f application.yaml
+```
