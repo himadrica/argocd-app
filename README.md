@@ -22,3 +22,9 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
 ```
 kubectl apply -f application.yaml
 ```
+
+## accessing app using port forward
+
+```
+kubectl port-forward -n myapp svc/myapp-service 8080:8080
+```
